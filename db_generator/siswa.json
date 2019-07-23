@@ -1,0 +1,38 @@
+[
+    {
+       "name": "id",
+       "dbType": "increments",
+       "htmlType": "",
+       "validations": "",
+       "searchable": false,
+       "fillable": false,
+       "primary": true,
+       "inForm": false,
+       "inIndex": false
+   },
+   {
+       "name": "nama_siswa",
+       "validations": "required",
+       "dbType": "string",
+       "htmlType": "text"
+   },
+   {
+       "name": "tahun_ajaran",
+       "validations": "required",
+       "dbType": "string",
+       "htmlType": "select,2013,2014,2015,2016,2017,2018"
+   },
+   {
+       "name": "jk",
+       "validations": "required",
+       "dbType": "string",
+       "htmlType": "radio,Laki-laki:Laki-laki,Perempuan:Perempuan"
+   },
+   {
+       "name": "jurusan",
+       "validations": "required",
+       "dbType": "string",
+       "htmlType": "radio,Tenik Otomotif:otomotif,Teknik Listrik:listrik,Jaringan Komputer:jarkom"
+   }
+ 
+]

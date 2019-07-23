@@ -1,0 +1,41 @@
+[
+    {
+        "name": "id",
+        "dbType": "increments",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": true,
+        "inForm": false,
+        "inIndex": false
+    },
+    {
+        "name": "kode",
+        "validations": "required",
+        "dbType": "string",
+        "htmlType": "text"
+    },
+    {
+        "name": "id_siswa",
+        "validations": "required",
+        "dbType": "integer",
+        "htmlType": "select,C1:C1,C2:C2,C3:C3,C4:C4,"
+    },
+    {
+        "name": "nama",
+        "validations": "",
+        "dbType": "string",
+        "htmlType": "",
+        "searchable": false,
+        "inForm": false,
+        "inIndex": false
+    },
+
+    {
+        "name": "keterangan",
+        "validations": "required",
+        "dbType": "string",
+        "htmlType": "textarea"
+    }
+]

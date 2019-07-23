@@ -1,0 +1,45 @@
+[
+    {
+        "name": "id",
+        "dbType": "increments",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": true,
+        "inForm": false,
+        "inIndex": false
+    },
+    {
+        "name": "id_alternatif",
+        "dbType": "string",
+        "htmlType": "hidden",
+        "searchable": false,
+        "inForm": false,
+        "inIndex": false
+    },
+    {
+        "name": "Absensi",
+        "validations": "required",
+        "dbType": "string",
+        "htmlType": "text"
+    },
+    {
+        "name": "eskul",
+        "validations": "required",
+        "dbType": "string",
+        "htmlType": "text"
+    },
+    {
+        "name": "sikap",
+        "validations": "required",
+        "dbType": "string",
+        "htmlType": "text"
+    },
+    {
+        "name": "rapot",
+        "validations": "required",
+        "dbType": "string",
+        "htmlType": "text"
+    }
+]

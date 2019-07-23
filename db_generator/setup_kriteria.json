@@ -1,0 +1,44 @@
+[
+    {
+       "name": "id",
+       "dbType": "increments",
+       "htmlType": "",
+       "validations": "",
+       "searchable": false,
+       "fillable": false,
+       "primary": true,
+       "inForm": false,
+       "inIndex": false
+   },
+   {
+        "name": "kode",
+        "validations": "required",
+        "dbType": "string",
+        "htmlType": "select,C1:C1,C2:C2,C3:C3,C4:C4,"
+    },
+   {
+       "name": "kriteria",
+       "validations": "required",
+       "dbType": "string",
+       "htmlType": "text"
+   },
+   {
+        "name": "nilai",
+        "validations": "required",
+        "dbType": "integer",
+        "htmlType": "number"
+    },
+    {
+        "name": "type",
+        "validations": "required",
+        "dbType": "string",
+        "htmlType": "select,cost:cost,benefit:benefit"
+    },
+    {
+        "name": "keterangan",
+        "validations": "required",
+        "dbType": "string",
+        "htmlType": "textarea"
+    }
+ 
+]

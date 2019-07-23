@@ -1,0 +1,39 @@
+[
+     {
+        "name": "id",
+        "dbType": "increments",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": true,
+        "inForm": false,
+        "inIndex": false
+    },
+   
+    {
+        "name": "nm_driver",
+        "validations": "required",
+        "dbType": "string,30",
+        "htmlType": "text"
+    },
+    {
+        "name": "alamat",
+        "validations": "required",
+        "dbType": "string",
+         "htmlType": "textarea"
+    },
+    {
+        "name": "no_telp",
+        "validations": "required",
+        "dbType": "string,30",
+        "htmlType": "text"
+    },
+    {
+        "name": "email",
+        "validations": "required",
+        "dbType": "string,30",
+        "htmlType": "email"
+    }
+  
+]

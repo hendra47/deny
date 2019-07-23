@@ -1,0 +1,33 @@
+[
+     {
+        "name": "id",
+        "dbType": "increments",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": true,
+        "inForm": false,
+        "inIndex": false
+    },
+   
+    {
+        "name": "nama_mekanik",
+        "validations": "required",
+        "dbType": "string",
+        "htmlType": "text"
+    },
+    {
+        "name": "level",
+        "validations": "required",
+        "dbType": "string",
+        "htmlType": "select,Formen,mekanik"
+    },
+    {
+        "name": "jk",
+        "validations": "required",
+        "dbType": "string",
+        "htmlType": "radio,Laki-laki:L,Perempuan:P"
+    }
+  
+]

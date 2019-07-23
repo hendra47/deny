@@ -1,0 +1,45 @@
+[
+     {
+        "name": "id",
+        "dbType": "increments",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": true,
+        "inForm": false,
+        "inIndex": false
+    },
+   
+    {
+        "name": "no_polisi",
+        "validations": "required",
+        "dbType": "string,30",
+        "htmlType": "text"
+    },
+    {
+        "name": "no_body",
+        "validations": "required",
+        "dbType": "string,30",
+        "htmlType": "text"
+    },
+    {
+        "name": "km",
+        "validations": "required",
+        "dbType": "string,30",
+        "htmlType": "text"
+    },
+    {
+        "name": "nm_driver",
+        "validations": "required",
+        "dbType": "string,30",
+        "htmlType": "text"
+    },
+    {
+        "name": "koridor",
+        "validations": "required",
+        "dbType": "string,30",
+        "htmlType": "text"
+    }
+  
+]

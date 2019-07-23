@@ -1,0 +1,49 @@
+[
+    {
+       "name": "id",
+       "dbType": "increments",
+       "htmlType": "",
+       "validations": "",
+       "searchable": false,
+       "fillable": false,
+       "primary": true,
+       "inForm": false,
+       "inIndex": false
+   },
+   {
+        "name": "id_kriteria",
+        "dbType": "string",
+        "htmlType": "hidden",
+        "searchable": false,
+        "inForm": false,
+        "inIndex": false
+    },
+    {
+        "name": "type",
+        "validations": "",
+        "dbType": "string",
+        "htmlType": "hidden",
+        "searchable": false,
+        "inForm": false,
+        "inIndex": false
+    },
+   {
+       "name": "nama",
+       "validations": "",
+       "dbType": "hidden",
+       "htmlType": "text"
+   },
+    {
+        "name": "nilai",
+        "validations": "required",
+        "dbType": "integer",
+        "htmlType": "number"
+    },
+    {
+        "name": "keterangan",
+        "validations": "required",
+        "dbType": "string",
+        "htmlType": "textarea"
+    }
+ 
+]

@@ -1,0 +1,39 @@
+[
+     {
+        "name": "id",
+        "dbType": "increments",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": true,
+        "inForm": false,
+        "inIndex": false
+    },
+   
+    {
+        "name": "no_sparepart",
+        "validations": "required",
+        "dbType": "string,30",
+        "htmlType": "text"
+    },
+    {
+        "name": "nama_sparepart",
+        "validations": "required",
+        "dbType": "string,30",
+        "htmlType": "text"
+    },
+    {
+        "name": "satuan",
+        "validations": "required",
+        "dbType": "string,30",
+        "htmlType": "text"
+    },
+    {
+        "name": "jumlah",
+        "validations": "required",
+        "dbType": "integer",
+        "htmlType": "text"
+    }
+  
+]
