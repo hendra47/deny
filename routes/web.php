@@ -41,3 +41,5 @@ Route::resource('crips', 'cripsController');
 Route::resource('alternatifs', 'alternatifController');
 
 Route::resource('nilaiAlternatifs', 'nilai_alternatifController');
+
+Route::resource('jurusans', 'jurusanController');

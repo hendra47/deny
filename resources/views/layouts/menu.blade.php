@@ -16,6 +16,9 @@
 @endif
 
 @if(App\Helpers\spkHelper::akses('siswa')==='true')
+<li class="{{ Request::is('jurusans*') ? 'active' : '' }}">
+    <a href="{!! route('jurusans.index') !!}"><i class="fa fa-edit"></i><span>Data Jurusan</span></a>
+</li>
 <li class="{{ Request::is('siswas*') ? 'active' : '' }}">
     <a href="{!! route('siswas.index') !!}"><i class="fa fa-user"></i><span>Data Siswa</span></a>
 </li>
@@ -87,6 +90,7 @@
                                         {{ csrf_field() }}
                                     </form>
 </li>
+
 
 
 

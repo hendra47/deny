@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Http\Requests\CreatesiswaRequest;
 use App\Http\Requests\UpdatesiswaRequest;
 use App\Repositories\siswaRepository;
+use App\Repositories\jurusanRepository;
+
 use App\Http\Controllers\AppBaseController;
 use Illuminate\Http\Request;
 use Flash;
@@ -15,10 +17,14 @@ class siswaController extends AppBaseController
 {
     /** @var  siswaRepository */
     private $siswaRepository;
+    private $jurusanRepository;
 
-    public function __construct(siswaRepository $siswaRepo)
+
+    public function __construct(siswaRepository $siswaRepo, jurusanRepository $jurusanRepo)
     {
         $this->siswaRepository = $siswaRepo;
+        $this->jurusanRepository = $jurusanRepo;
+
     }
 
     /**
@@ -43,7 +49,9 @@ class siswaController extends AppBaseController
      */
     public function create()
     {
-        return view('siswas.create');
+        $jurusans = $this->jurusanRepository->all();
+        return view('siswas.create')
+        ->with('jurusan',$jurusans);
     }
 
     /**
@@ -94,14 +102,14 @@ class siswaController extends AppBaseController
     public function edit($id)
     {
         $siswa = $this->siswaRepository->findWithoutFail($id);
-
+        $jurusans = $this->jurusanRepository->all();
         if (empty($siswa)) {
             Flash::error('Siswa not found');
 
             return redirect(route('siswas.index'));
         }
 
-        return view('siswas.edit')->with('siswa', $siswa);
+        return view('siswas.edit')->with('siswa', $siswa)->with('jurusan',$jurusans);
     }
 
     /**

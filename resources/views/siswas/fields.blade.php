@@ -40,6 +40,15 @@
 
 </div>
 
+<div class="form-group col-sm-6">
+ {!! Form::label('Jurusan', 'Jurusan:') !!}
+<select name="jurusan" class="form-control">
+  @foreach($jurusan as $jurusan)
+    <option value="{!! $jurusan->nama !!}">{!! $jurusan->nama !!}</option>
+  @endforeach                 
+</select>
+</div>
+
 <!-- Submit Field -->
 <div class="form-group col-sm-12">
     {!! Form::submit('Save', ['class' => 'btn btn-primary']) !!}
