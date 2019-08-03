@@ -7,7 +7,7 @@
 #
 # Host: 127.0.0.1 (MySQL 5.7.25)
 # Database: spk
-# Generation Time: 2019-07-13 15:58:19 +0000
+# Generation Time: 2019-08-03 12:43:10 +0000
 # ************************************************************
 
 
@@ -121,6 +121,33 @@ VALUES
 	(11,'kepala_sekolah','laporan','-','2017-12-03 12:13:40','2017-12-03 12:13:40');
 
 /*!40000 ALTER TABLE `hak_akses` ENABLE KEYS */;
+UNLOCK TABLES;
+
+
+# Dump of table jurusan
+# ------------------------------------------------------------
+
+DROP TABLE IF EXISTS `jurusan`;
+
+CREATE TABLE `jurusan` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `nama` varchar(255) DEFAULT '',
+  `keterangan` varchar(255) DEFAULT '',
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+LOCK TABLES `jurusan` WRITE;
+/*!40000 ALTER TABLE `jurusan` DISABLE KEYS */;
+
+INSERT INTO `jurusan` (`id`, `nama`, `keterangan`, `created_at`, `updated_at`)
+VALUES
+	(1,'Otomotif','-','2019-08-03 10:21:01','2019-08-03 10:21:01'),
+	(2,'Mesin','-','2019-08-03 10:21:19','2019-08-03 10:21:19'),
+	(3,'Komputer','-','2019-08-03 10:21:31','2019-08-03 10:21:31');
+
+/*!40000 ALTER TABLE `jurusan` ENABLE KEYS */;
 UNLOCK TABLES;
 
 
@@ -255,8 +282,8 @@ LOCK TABLES `siswas` WRITE;
 INSERT INTO `siswas` (`id`, `nama_siswa`, `tahun_ajaran`, `jk`, `jurusan`, `updated_at`, `created_at`)
 VALUES
 	(1,'wiwi','2014','Perempuan','jarkom','2017-11-18 13:35:25','2017-11-18 13:35:25'),
-	(2,'rama','2013','Laki-laki','otomotif','2017-12-02 07:37:07','2017-12-02 07:37:07'),
-	(3,'deni','2013','Laki-laki','otomotif','2019-07-13 15:55:53','2019-07-13 22:55:53'),
+	(2,'rama','2013','Laki-laki','Mesin','2019-08-03 10:29:27','2019-08-03 17:29:27'),
+	(3,'deni','2013','Laki-laki','Mesin','2019-08-03 10:29:32','2019-08-03 17:29:32'),
 	(4,'desi','2013','Perempuan','otomotif','2017-12-02 07:37:42','2017-12-02 07:37:42'),
 	(5,'jamal','2013','Laki-laki','otomotif','2019-07-13 15:54:29','2019-07-13 22:54:29');
 
