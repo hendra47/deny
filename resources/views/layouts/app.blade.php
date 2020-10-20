@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Daar El Gusti</title>
+    <title>Laravel Spk</title>
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -24,7 +24,7 @@
 
         <!-- Logo -->
         <a href="{!! url('/home') !!}" class="logo">
-            <b>Daar El Gusti</b>
+            <b>Laravel SPK</b>
         </a>
 
         <!-- Header Navbar -->
@@ -88,7 +88,7 @@
 
     <!-- Main Footer -->
     <footer class="main-footer" style="max-height: 100px;text-align: center">
-        <strong>Copyright © 2017 <a href="#" >Daar El Gusti</a>.</strong> All rights reserved.
+        <strong>Copyright © 2020 <a href="https://bikinkoding.com" >bikinkoding.com</a>.</strong> All rights reserved.
     </footer>
 
 </div>

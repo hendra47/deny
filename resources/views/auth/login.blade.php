@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Sistem informasi penilaian - SAW</title>
+    <title>Laravel SPK</title>
 
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
@@ -29,14 +29,15 @@
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <link rel="stylesheet" href="{{ URL::asset('/css/style.css') }}">
 
 </head>
 <body class="hold-transition login-page" style="background:url({{ URL::asset('/img/bg.jpg') }});background-repeat: no-repeat;">
 <div class="login-box">
     <div class="login-logo">
         <a href="{{ url('/home') }}">
-            <p style="color: white;">Sistem informasi penilaian</p>
-            <b style="color: #4286f4;">MTs DAAR EL GUSTI</b>
+            <p style="color: white;">Laravel SPK</p>
+            <img src="{{ URL::asset('/img/logo.png') }}" class="login-icon" alt=""/>
         </a>
     </div>
 
